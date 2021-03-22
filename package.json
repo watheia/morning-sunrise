@@ -7,8 +7,11 @@
     "dev": "next dev",
     "develop": "next dev",
     "fetch": "sourcebit fetch",
-    "build": "next build && next export",
-    "start": "next start"
+    "build": "cross-env GENERATE_SOURCEMAP=false next build && next export",
+    "start": "next start",
+    "format": "prettier --write '**/*.{js,css,html}'",
+    "clean": "rimraf ./.cache ./.next ./node_modules",
+    "deps:graph": "depcruise --config ./.dependency-cruiser.js --output-type dot src | dot -T svg > dependencygraph.svg"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
@@ -29,5 +32,10 @@
     "sourcebit-source-contentful": "^0.6.4",
     "sourcebit-target-next": "^0.5.2",
     "sprintf-js": "^1.1.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dependency-cruiser": "^9.23.3",
+    "prettier": "^2.2.1"
   }
 }

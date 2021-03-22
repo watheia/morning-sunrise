@@ -35,25 +35,25 @@ You can [create a site](https://app.stackbit.com/create?theme=https://github.com
 
 ## Develop Locally
 
-1. Install [Node.js and npm](https://nodejs.org/en/)
+1.  Install [Node.js and npm](https://nodejs.org/en/)
 
-1. Install npm dependencies:
+1.  Install npm dependencies:
 
         npm install
 
-1. Navigate to ["API keys" Settings page](https://app.contentful.com/spaces/mmapyu4xlel5/api/cma_tokens) of your Contentful space and generate new "Personal Access Token"
+1.  Navigate to ["API keys" Settings page](https://app.contentful.com/spaces/mmapyu4xlel5/api/cma_tokens) of your Contentful space and generate new "Personal Access Token"
 
-1. Assign the generated Personal Access Token to the `CONTENTFUL_ACCESS_TOKEN` environment variable (replace `{personal_access_token}` with the access token):
+1.  Assign the generated Personal Access Token to the `CONTENTFUL_ACCESS_TOKEN` environment variable (replace `{personal_access_token}` with the access token):
 
         export CONTENTFUL_ACCESS_TOKEN={personal_access_token}
 
-1. Start the Next.js local development server:
+1.  Start the Next.js local development server:
 
-        npm run develop
+        yarn develop
 
-1. Open [http://localhost:3000/](http://localhost:3000/) in the browser
+1.  Open [http://localhost:3000/](http://localhost:3000/) in the browser
 
-1. 🎉
+1.  🎉
 
 ## Editing Content
 
@@ -72,6 +72,10 @@ Here's a few resources to get you started:
 - 📚 &nbsp; [Stackbit Documentation](https://stackbit.link/project-readme-documentation)
 
 If you need a hand, make sure to check the [Stackbit support page](https://stackbit.link/project-readme-support).
+
+## Dependencies
+
+![depgraph](./dependencygraph.svg)
 
 ## Colophon
 

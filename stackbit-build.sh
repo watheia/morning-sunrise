@@ -7,6 +7,6 @@ set -v
 echo "stackbit-build.sh: start build"
 
 # build site
-npm run build
+yarn build
 
 echo "stackbit-build.sh: finished build"
