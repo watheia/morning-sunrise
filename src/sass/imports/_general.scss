@@ -38,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: "#092947";
+  color: #092947;
   font-weight: bold;
   line-height: 1.1;
   margin: 1.5em 0 0.5em;
@@ -88,10 +88,9 @@ h6 {
 b,
 strong,
 dt {
-  color: "#092947" .font-fraunces & {
+  .font-fraunces & {
     font-weight: 500;
   }
-}
 
 dl {
   margin: 0;
