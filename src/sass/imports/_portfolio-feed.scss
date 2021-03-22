@@ -58,7 +58,7 @@
     background-repeat: no-repeat;
     background-size: 204% 100%;
     border: 2px solid $color-accent;
-    color:#fff;
+    color: #fff;
     font-size: 16px;
     font-weight: bold;
     line-height: 1.2;
@@ -66,10 +66,10 @@
     left: 50%;
     position: absolute;
     top: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    -webkit-transition: background-position .3s, color .3s;
-    transition: background-position .3s, color .3s;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: background-position 0.3s, color 0.3s;
+    transition: background-position 0.3s, color 0.3s;
     z-index: 1;
 
     .font-fraunces & {
@@ -79,7 +79,7 @@
 
   &__view-all {
     .project-card__image {
-      opacity: .5;
+      opacity: 0.5;
     }
 
     &:hover,
@@ -108,8 +108,8 @@
         flex: 0 0 60%;
         max-width: 60%;
 
-        &:nth-child(4n+2),
-        &:nth-child(4n+3) {
+        &:nth-child(4n + 2),
+        &:nth-child(4n + 3) {
           -ms-flex: 0 0 40%;
           flex: 0 0 40%;
           max-width: 40%;
@@ -127,8 +127,8 @@
   .project-card {
     &__image {
       margin: 0;
-      -webkit-transition: .35s;
-      transition: .35s;
+      -webkit-transition: 0.35s;
+      transition: 0.35s;
     }
 
     &__header {
@@ -140,8 +140,8 @@
       position: absolute;
       -webkit-transform: translateY(100%);
       transform: translateY(100%);
-      -webkit-transition: .3s;
-      transition: .3s;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
       width: 100%;
       z-index: 1;
     }
@@ -150,7 +150,7 @@
       &:hover,
       &:focus {
         .project-card__image {
-          opacity: .5;
+          opacity: 0.5;
           -webkit-transform: translateY(-35px);
           transform: translateY(-35px);
         }
