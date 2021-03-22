@@ -53,8 +53,8 @@ option {
     height: 1px;
     left: 0;
     position: absolute;
-    -webkit-transition: width .3s;
-    transition: width .3s;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
     width: 0;
   }
 
@@ -83,7 +83,7 @@ option {
     box-sizing: border-box;
     content: "";
     height: 0.625em;
-    margin-top: -.45em;
+    margin-top: -0.45em;
     position: absolute;
     right: 5px;
     top: 50%;
@@ -103,7 +103,7 @@ option {
     line-height: 1.4;
   }
 
-  input[type=checkbox] {
+  input[type="checkbox"] {
     height: 1.5em;
     left: 0;
     position: absolute;

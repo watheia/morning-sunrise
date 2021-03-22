@@ -5,13 +5,13 @@
 
   a {
     &:not(.button) {
-      border-bottom: 1px solid rgba($color-gray-600, .4);
-      -webkit-transition: opacity .3s;
-      transition: opacity .3s;
+      border-bottom: 1px solid rgba($color-gray-600, 0.4);
+      -webkit-transition: opacity 0.3s;
+      transition: opacity 0.3s;
 
       &:hover,
       &:focus {
-        opacity: .6;
+        opacity: 0.6;
       }
     }
   }

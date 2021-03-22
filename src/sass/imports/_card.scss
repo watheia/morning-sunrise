@@ -30,12 +30,12 @@
 
     a {
       &:not(.button) {
-        border-bottom: 1px solid rgba($color-accent, .3);
+        border-bottom: 1px solid rgba($color-accent, 0.3);
         color: $color-accent;
-  
+
         &:hover,
         &:focus {
-          opacity: .6;
+          opacity: 0.6;
         }
       }
     }

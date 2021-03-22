@@ -58,26 +58,26 @@
   }
 
   .site-footer a:not(.button) {
-    border-bottom-color: rgba($color-gray-100, .4);
+    border-bottom-color: rgba($color-gray-100, 0.4);
   }
 
   ::-webkit-input-placeholder {
     color: $color-gray-500;
   }
-  
+
   ::-moz-placeholder {
     color: $color-gray-500;
     opacity: 1;
   }
-  
+
   :-ms-input-placeholder {
     color: $color-gray-500;
   }
-  
+
   ::-ms-input-placeholder {
     color: $color-gray-500;
   }
-  
+
   ::placeholder {
     color: $color-gray-500;
   }
@@ -90,7 +90,7 @@
 
   @media only screen and (max-width: 767px) {
     .site-header:after {
-      background: rgba(0,0,0,.8);
+      background: rgba(0, 0, 0, 0.8);
     }
 
     .navbar__menu-container {
@@ -108,7 +108,11 @@
 
     .button--primary,
     .project-card__button {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, map-get($accent-colors, $accent) 50%);
+      background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 50%,
+        map-get($accent-colors, $accent) 50%
+      );
       border-color: map-get($accent-colors, $accent);
     }
 
@@ -130,7 +134,7 @@
     .button-group a:not(.button),
     .card__body a:not(.button),
     .text-block a:not(.button) {
-      border-bottom-color: rgba(map-get($accent-colors, $accent), .3);
+      border-bottom-color: rgba(map-get($accent-colors, $accent), 0.3);
       color: map-get($accent-colors, $accent);
     }
   }
